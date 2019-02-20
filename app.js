@@ -21,7 +21,10 @@ $(".square").on("mouseover", function(){
 
 //On click turn background squares back to white
 eraser.on("click", function(){
-    $(".square").css('background-color', 'white')
+    $(".square").css('background-color', 'white');
+})
+$(".square").on("click", function(){
+    $(this).css('background-color', 'white');
 })
 
 $(document).keydown(function(e){
